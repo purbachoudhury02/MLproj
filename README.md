@@ -1,6 +1,6 @@
 # Student Exam Performance Predictor
 
-Student performance is influenced by both academic and demographic factors. This project predicts **math_score** using a student's reading score, writing score, and background attributes (gender, ethnicity, parental education level, lunch type, and test preparation course completion).
+An end-to-end machine learning pipeline that predicts a student's math score based on their other exam scores and background factors.Student performance is influenced by both academic and demographic factors. This project predicts **math_score** using a student's reading score, writing score, and background attributes (gender, ethnicity, parental education level, lunch type, and test preparation course completion).
 
 ## Dataset
 
