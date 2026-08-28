@@ -4,7 +4,7 @@ An end-to-end machine learning pipeline that predicts a student's math score bas
 
 ## Dataset
 
-- Source: Student performance dataset (`notebook/data/stud.csv`)
+- Source: Student performance dataset (`https://www.kaggle.com/datasets/spscientist/students-performance-in-exams`)
 - Target variable: `math_score`
 - Features used:
   - Numerical: `reading_score`, `writing_score`
