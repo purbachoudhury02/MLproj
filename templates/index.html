@@ -1,1 +1,289 @@
-<h1>WELCOME TO THE HOME PAGE</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Performance Predictor</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="brand">
+                <div class="brand-icon">M</div>
+                <span>MathPredict</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="{{ url_for('predict_datapoint') }}"
+                   class="nav-button">
+                    Predict
+                </a>
+            </div>
+        </nav>
+
+
+        <!-- Hero Section -->
+        <main>
+
+            <section class="hero">
+
+                <div class="hero-content">
+
+                    <div class="badge">
+                        ✦ Machine Learning Project
+                    </div>
+
+                    <h1>
+                        Understand and predict
+                        <span>student performance.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        An intelligent machine-learning application that
+                        estimates a student's mathematics score based on
+                        academic and demographic factors.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="{{ url_for('predict_datapoint') }}"
+                           class="primary-button">
+                            Start Prediction
+                            <span>→</span>
+                        </a>
+
+                        <a href="#how-it-works"
+                           class="secondary-button">
+                            Learn how it works
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Decorative Prediction Card -->
+                <div class="hero-visual">
+
+                    <div class="floating-card card-top">
+                        <span class="mini-icon">📊</span>
+                        <div>
+                            <strong>Student Data</strong>
+                            <small>Multiple features</small>
+                        </div>
+                    </div>
+
+                    <div class="prediction-card">
+
+                        <div class="prediction-header">
+                            <span>Prediction</span>
+                            <span class="status-dot"></span>
+                        </div>
+
+                        <div class="prediction-score">
+                            78.4
+                        </div>
+
+                        <p>Estimated Mathematics Score</p>
+
+                        <div class="score-bar">
+                            <div class="score-fill"></div>
+                        </div>
+
+                        <div class="prediction-footer">
+                            <span>ML Model</span>
+                            <span>Ready</span>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card card-bottom">
+                        <span class="mini-icon">✦</span>
+                        <div>
+                            <strong>Smart Prediction</strong>
+                            <small>Powered by ML</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- About -->
+            <section class="info-section" id="about">
+
+                <div class="section-heading">
+                    <span class="section-label">ABOUT THE PROJECT</span>
+
+                    <h2>
+                        What is Student Performance Prediction?
+                    </h2>
+
+                    <p>
+                        Student performance can be influenced by a variety
+                        of academic and personal factors. This project uses
+                        machine learning to identify patterns in student
+                        data and estimate a mathematics score.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <!-- Feature Cards -->
+            <section class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon purple">📋</div>
+
+                    <h3>Student Information</h3>
+
+                    <p>
+                        Provide information about the student's academic
+                        background and other relevant characteristics.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon yellow">⚙</div>
+
+                    <h3>Machine Learning</h3>
+
+                    <p>
+                        Your information is processed through a trained
+                        machine-learning pipeline.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon pink">🎯</div>
+
+                    <h3>Predicted Score</h3>
+
+                    <p>
+                        The model generates an estimated mathematics score
+                        based on the provided information.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <!-- How It Works -->
+            <section class="how-section" id="how-it-works">
+
+                <div class="section-heading centered">
+
+                    <span class="section-label">
+                        THE PROCESS
+                    </span>
+
+                    <h2>How does it work?</h2>
+
+                    <p>
+                        From student information to a machine-learning
+                        prediction in a few simple steps.
+                    </p>
+
+                </div>
+
+
+                <div class="steps">
+
+                    <div class="step">
+                        <div class="step-number">01</div>
+
+                        <h3>Enter information</h3>
+
+                        <p>
+                            Provide the student's academic and
+                            demographic information.
+                        </p>
+                    </div>
+
+
+                    <div class="step-line"></div>
+
+
+                    <div class="step">
+                        <div class="step-number">02</div>
+
+                        <h3>Process the data</h3>
+
+                        <p>
+                            The inputs are transformed into the format
+                            required by the trained model.
+                        </p>
+                    </div>
+
+
+                    <div class="step-line"></div>
+
+
+                    <div class="step">
+                        <div class="step-number">03</div>
+
+                        <h3>Generate prediction</h3>
+
+                        <p>
+                            The machine-learning model estimates the
+                            student's mathematics score.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CTA -->
+            <section class="cta">
+
+                <div>
+                    <span class="section-label">READY?</span>
+
+                    <h2>
+                        Generate a student performance prediction.
+                    </h2>
+
+                    <p>
+                        Enter a few details and let the model do the rest.
+                    </p>
+                </div>
+
+                <a href="{{ url_for('predict_datapoint') }}"
+                   class="primary-button light">
+                    Start Prediction →
+                </a>
+
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer>
+            <span>Student Performance Predictor</span>
+
+            <span>
+                Machine Learning Project
+            </span>
+        </footer>
+
+    </div>
+
+</body>
+</html>
